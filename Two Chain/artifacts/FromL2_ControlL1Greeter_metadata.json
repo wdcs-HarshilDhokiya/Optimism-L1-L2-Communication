@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getNetwork",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "network",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_greeting",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "greeterL1Addr",
+						"type": "address"
+					}
+				],
+				"name": "setGreeting",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Two Chain/L2-L1.sol": "FromL2_ControlL1Greeter"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@eth-optimism/contracts/libraries/bridge/ICrossDomainMessenger.sol": {
+			"keccak256": "0x8f29ae23021345a20ccac7b5edb3fc38268aef943b65adc8a32e74b80bf1833a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fb98d241e11ab070a045674dd156e0e08bae94d594876cf6a89a93b0597ed7c3",
+				"dweb:/ipfs/QmWVyApk7QdH4PHwrgBMfTzf3LREPsQRVqc2Ss4gEtNmfe"
+			]
+		},
+		"Two Chain/L2-L1.sol": {
+			"keccak256": "0xa2a2aac814168bc6c3219d83661dd1473ce55d245dd8db8b144a3317e16f2c92",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2037bd16ff09d19a747ced34a9285414069839170085328ce7bf7bec38716be1",
+				"dweb:/ipfs/QmZSCe2F9vMX2eyjKhd9wHVk1iM3PFwJjXpB2sGsPVrzZg"
+			]
+		}
+	},
+	"version": 1
+}
